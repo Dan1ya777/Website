@@ -1,21 +1,46 @@
+body{
+  background-color: #fff;
+  color: #001D3D;
+}
+h1{
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+}
+h2{
+  text-align: center;
+  font-family: 'Solway';
+}
+p{
+  font-family: 'Noto Sans';
+}
+a{
+  color: #fff;
+  font-family: 'Noto Sans';
+  text-decoration: none;
+}
+button{
+  background-color: #001D3D;
+  color: #fff;
+  font-family: 'Noto Sans';
+  text-decoration: none;
+  border: none;
+}
 nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  background-color: #001D3D;
   display: flex;
   align-items: center;
 }
 nav ul li a{
   display: block;
-  color: black;
-  padding: 20% 1cap;
-  text-decoration: none;
+  padding: 1cap 1.5cap;
 }
 .right-side{
   display: flex;
   flex-direction: row;
-  margin-left: 52%;
+  margin-left: 43%;
   align-items: center;
   gap: 3%;
 }
@@ -24,8 +49,8 @@ nav input[type=text]{
 }
 
 footer{
-  background-color: #f1f1f1;
-  color: black;
+  background-color: #001D3D;
+  color: #fff;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -41,10 +66,6 @@ footer{
   gap: 1cap;
   margin-top: 1%;
 }
-.links a{
-  color: black;
-  text-decoration: none;
-}
 .copyright{
   text-align: center;
   margin-top: 5%;
@@ -57,33 +78,16 @@ footer{
   width: auto;
 }
 
-h1{
-  text-align: center;
-}
-h2{
-  text-align: center;
-}
-
-.home-hero-section{
-  background-color: gray;
-  padding: 10%;
-}
-.home-hero-section h1{
-  text-align: left;
+.hero-section-image{
+  position: relative;
 }
 .hero-section-content{
+  position: absolute;
   left: 5%;
   top: 50%;
 }
 .hero-section-button{
-  display: flex;
-  align-items: center;
-  background-color: darkgray;
-  padding: 1%;
-}
-.home-info div{
-  background-color: gray;
-  padding: 10%;
+  padding: 1cap;
 }
 .home-info-section{
   display: flex;
@@ -95,6 +99,10 @@ h2{
   align-items: center;
   gap: 5%;
 }
+.home-info-section img{
+  width: 25%;
+  height: auto;
+}
 .item-container{
   display: flex;
   flex-direction: row;
@@ -104,13 +112,17 @@ h2{
   margin: 3%;
 }
 .item{
-  background-color: gray;
+  border: solid;
+  background-color: #5aa9e6;
   text-align: center;
   width: 20%;
 }
-.item div{
-  background-color: darkgray;
-  padding: 30%;
+.item img{
+  width: 100%;
+  height: 80%;
+}
+.item a{
+  text-decoration: none;
 }
 
 .collection-content{
@@ -137,13 +149,18 @@ h2{
   flex-wrap: wrap;
 }
 .product{
-  background-color: gray;
+  border: solid;
+  background-color: #5aa9e6;
   position: relative;
   width: 20%;
 }
-.product div{
-  background-color: darkgray;
-  padding: 40%;
+.product img{
+  width: 100%;
+  height: 57%;
+}
+.product a{
+  text-decoration: none;
+  text-align: center;
 }
 .product .favorite-button{
   position: absolute;
@@ -162,9 +179,25 @@ h2{
   flex-direction: column;
 }
 .about-image{
-  background-color: gray;
-  text-align: center;
-  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+.about-image img{
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+.about-image h2{
+  position: absolute;
+}
+.heading1{
+  top: 45%;
+}
+.heading2{
+  top: 110%;
+}
+.heading3{
+  top: 170%;
 }
 .about-text{
   text-align: center;
@@ -191,17 +224,15 @@ label{
   flex-direction: column;
 }
 textarea{
-  background-color: gray;
   width: 100%;
   margin-bottom: 2%;
-  border: none;
+  border: solid;
 }
 form input{
-  background-color: gray;
   width: 100%;
   padding-bottom: 2%;
   margin-bottom: 2%;
-  border: none;
+  border: solid;
 }
 form button{
   width: 100%;
@@ -242,25 +273,13 @@ form button{
   display: flex;
   flex-direction: column;
 }
-.location-section1{
-  background-color: gray;
-  text-align: center;
-  padding: 5%;
-}
-.location-section2 div{
-  background-color: gray;
-  padding: 10% 25%;
-}
 .location-section2{
   display: flex;
   flex-direction: row;
   gap: 5%;
   margin-top: 3%;
+  justify-content: center;
   align-items: center;
-}
-.location-section3 div{
-  background-color: gray;
-  padding: 10% 20%;
 }
 .location-section3{
   display: flex;
