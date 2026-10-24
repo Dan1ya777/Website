@@ -6,27 +6,30 @@
         <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Solway' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+        <script src="script.js"></script>
         <title>Cart</title>
     </head>
     <body>
         <nav>
             <ul>
                 <li><a href="index.html"><img src="images/logo.png" alt="logo"></a></li>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="collection.html">Collection</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <div class="right-side">
                     <li><input type="text" placeholder="Search"></li>
                     <li><a href="favourites.html"><i class="material-icons">favorite</i></a></li>
-                    <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                    <li><a class="active" href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
                 </div>
             </ul>
         </nav>
 
         <h1>My Cart</h1>
-        <button><a href="checkout.html">Checkout</a></button>
-
+        <div class="removeall">
+            <button>Remove All</button>
+        </div>
+        
         <footer>
             <div class="footer-content">
                 <div class="links">
@@ -44,5 +47,6 @@
                     <img src="images/facebook.png" alt="facebook">
                 </div>
         </footer>
+
     </body>
 </html>

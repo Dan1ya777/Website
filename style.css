@@ -5,9 +5,14 @@ body{
 h1{
   text-align: center;
   font-family: 'Cormorant Garamond';
+  font-size: 5cap;
 }
 h2{
   text-align: center;
+  font-family: 'Solway';
+  font-size: 3cap;
+}
+h3{
   font-family: 'Solway';
 }
 p{
@@ -24,6 +29,7 @@ button{
   font-family: 'Noto Sans';
   text-decoration: none;
   border: none;
+  font-size: 1.5cap;
 }
 nav ul{
   list-style-type: none;
@@ -36,6 +42,13 @@ nav ul{
 nav ul li a{
   display: block;
   padding: 1cap 1.5cap;
+}
+nav ul li a:hover{
+  background-color: #5aa9e6;
+  color: #001D3D;
+}
+nav ul li a.active{
+  color: #e1a730;
 }
 .right-side{
   display: flex;
@@ -125,10 +138,6 @@ footer{
   text-decoration: none;
 }
 
-.collection-content{
-  display: flex;
-  flex-direction: column;
-}
 .button-container{
   display: flex;
   flex-direction: row;
@@ -139,6 +148,7 @@ footer{
 }
 .button-container button{
   width: 10%;
+  padding: 1%;
 }
 .product-container{
   display: flex;
@@ -156,7 +166,7 @@ footer{
 }
 .product img{
   width: 100%;
-  height: 57%;
+  height: 58%;
 }
 .product a{
   text-decoration: none;
@@ -222,51 +232,21 @@ footer{
 label{
   display: flex;
   flex-direction: column;
+  font-family: 'Noto Sans';
 }
 textarea{
   width: 100%;
   margin-bottom: 2%;
-  border: solid;
+  border: solid #001D3D;
 }
 form input{
   width: 100%;
   padding-bottom: 2%;
   margin-bottom: 2%;
-  border: solid;
+  border: solid #001D3D;
 }
 form button{
   width: 100%;
-}
-
-.productpage-content{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5%;
-  text-align: center;
-}
-.image{
-  background-color: gray;
-  width: 50%;
-  padding-bottom: 30%;
-  position: relative;
-}
-.productpage-content .favorite-button{
-  position: absolute;
-  top: 1%;
-  right: 50%;
-  background: none;
-  border: none;
-}
-.productpage-content .cart-button{
-  width: 100%;
-  margin-top: 15%;
-}
-.product-info{
-  flex: 1;
-}
-.productpage-content p{
-  margin-top: 15%;
 }
 
 .location-content{
@@ -292,9 +272,38 @@ form button{
   margin-top: 3%;
 }
 
-.checkout-content{
+.cart-container{
   display: flex;
   flex-direction: column;
+}
+.cart-row{
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  align-items: center;
+  width: 100%;
   justify-content: center;
+  margin-top: 2%;
+}
+.cart-img{
+  width: 10%;
+  height: auto;
+}
+.cart-qty{
+  width: 5%;
+  padding: 1%;
+}
+.remove-btn{
+  padding: 1%;
+}
+.cart-total{
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.removeall{
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
 }
