@@ -1,58 +1,129 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Makes website responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Link to CSS stylesheet-->
         <link rel="stylesheet" href="style.css">
+        <!--Link to Google material icons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Links to Google fonts-->
         <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Solway' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+        <!--Sets favicon / tab icon-->
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <!--Title shown on the tab-->
         <title>Auckland Location</title>
     </head>
     <body>
+        <!--Navigation bar-->
         <nav>
+            <!--Checkbox used to open and close mobile hamburger menu-->
+            <input type="checkbox" id="check">
+            <!--Mobile hamburger menu-->
+            <label for="check" class="checkbtn">
+                <!--Menu icon-->
+                <i class="material-icons">menu</i>
+            </label>
+            <!--Navigation links-->
             <ul>
+                <!--Logo and link to home page-->
                 <li><a href="index.html"><img src="images/logo.png" alt="logo"></a></li>
+                <!--Link to home page-->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <!--Collection dropdown menu-->
+                <li class="dropdown">
+                    <!--Link to collection page-->
+                    <a href="collection.html">Collection</a>
+                    <!--Dropdown content-->
+                    <div class="dropdown-content">
+                        <!--Navigation links in dropdown-->
+                        <!--Link to rings page-->
+                        <a href="rings.html">Rings</a>
+                        <!--Link to earrings page-->
+                        <a href="earrings.html">Earrings</a>
+                        <!--Link to bracelets page-->
+                        <a href="bracelets.html">Bracelets</a>
+                        <!--Link to necklaces page-->
+                        <a href="necklaces.html">Necklaces</a>
+                    </div>
+                </li>
+                <!--About us dropdown menu-->
+                <li class="dropdown">
+                    <!--Link to about us page-->
+                    <a href="aboutus.html">About Us</a>
+                    <!--Dropdown content-->
+                    <div class="dropdown-content">
+                        <!--Navigation links in dropdown-->
+                        <!--Link to auckland page-->
+                        <a class="active" href="auckland.html">Our Store in Auckland</a>
+                        <!--Link to tauranga page-->
+                        <a href="tauranga.html">Our Store in Tauranga</a>
+                        <!--Link to hamilton page-->
+                        <a href="hamilton.html">Our Store in Hamilton</a>
+                    </div>
+                </li>
+                <!--Link to contact page-->
                 <li><a href="contact.html">Contact</a></li>
+                <!--Right side of the navigation bar-->
                 <div class="right-side">
-                    <li><input type="text" placeholder="Search"></li>
+                    <!--Search bar-->
+                    <li><input type="text" name="" id="find" placeholder="Search products..." onkeyup="search()"></li>
+                    <!--Link to favorite page-->
+                    <!--Favorite icon-->
                     <li><a href="favourites.html"><i class="material-icons">favorite</i></a></li>
+                    <!--Link to cart page-->
+                    <!--Shopping cart icon-->
                     <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
                 </div>
             </ul>
         </nav>
-
+        <!--Auckland main content-->
         <div class="location-content">
+            <!--Main heading-->
             <h1>Auckland Store Location</h1>
+            <!--Section containing map image and address-->
             <div class="location-section2">
                 <img src="images/auckland_map.png">
                 <h3>Shop 12, 26 Nelson Strees, Auckland CBD, Auckland 1010, New Zealand</h3>
             </div>
+            <!--Sub-heading-->
             <h2>Outside View</h2>
+            <!--Section containing store images-->
             <div class="location-section3">
-                <img src="images/store1-1.png">
-                <img src="images/store1-2.png">
+                <img src="images/auckland_store1.png" alt="store in Auckland image 1">
+                <img src="images/auckland_store2.png" alt="store in Auckland image 2">
             </div>
         </div>
-
+        <!--Footer-->
         <footer>
+            <!--Footer content-->
             <div class="footer-content">
+                <!--Footer navigation links-->
                 <div class="links">
+                    <!--Link to about us page-->
                     <a href="aboutus.html">About Us</a>
+                    <!--Link to contact page-->
                     <a href="contact.html">Contact</a>
                 </div>
+                <!--Copyright-->
                 <div class="copyright">
                     <p>@Copyright</p>
                 </div>
+                <!--Links to social media-->
                 <div class="social-medias">
                     <p>Our social medias</p>
-                    <img src="images/youtube.png" alt="youtube">
-                    <img src="images/tiktok.png" alt="tiktok">
-                    <img src="images/instagram.png" alt="instagram">
-                    <img src="images/facebook.png" alt="facebook">
+                    <!--Link to YouTube-->
+                    <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a>
+                    <!--Link to TikTok-->
+                    <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="tiktok"></a>
+                    <!--Link to Instagram-->
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram"></a>
+                    <!--Link to Facebook-->
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
                 </div>
+            </div>
         </footer>
     </body>
 </html>

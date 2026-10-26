@@ -1,78 +1,187 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Makes website responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Link to CSS stylesheet-->
         <link rel="stylesheet" href="style.css">
+        <!--Link to Google material icons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Links to Google fonts-->
         <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Solway' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+        <!--Sets favicon / tab icon-->
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
         <script src="script.js"></script>
+        <script src="search.js"></script>
+        <!--Title shown on the tab-->
         <title>Bracelets</title>
     </head>
     <body>
+        <!--Navigation bar-->
         <nav>
+            <!--Checkbox used to open and close mobile hamburger menu-->
+            <input type="checkbox" id="check">
+            <!--Mobile hamburger menu-->
+            <label for="check" class="checkbtn">
+                <!--Menu icon-->
+                <i class="material-icons">menu</i>
+            </label>
+            <!--Navigation links-->
             <ul>
+                <!--Logo and link to home page-->
                 <li><a href="index.html"><img src="images/logo.png" alt="logo"></a></li>
+                <!--Link to home page-->
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="collection.html">Collection</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <!--Collection dropdown menu-->
+                <li class="dropdown">
+                    <!--Link to collection page-->
+                    <a href="collection.html">Collection</a>
+                    <!--Dropdown content-->
+                    <div class="dropdown-content">
+                        <!--Navigation links in dropdown-->
+                        <!--Link to rings page-->
+                        <a href="rings.html">Rings</a>
+                        <!--Link to earrings page-->
+                        <a href="earrings.html">Earrings</a>
+                        <!--Link to bracelets page-->
+                        <a class="active" href="bracelets.html">Bracelets</a>
+                        <!--Link to necklaces page-->
+                        <a href="necklaces.html">Necklaces</a>
+                    </div>
+                </li>
+                <!--About us dropdown menu-->
+                <li class="dropdown">
+                    <!--Link to about us page-->
+                    <a href="aboutus.html">About Us</a>
+                    <!--Dropdown content-->
+                    <div class="dropdown-content">
+                        <!--Navigation links in dropdown-->
+                        <!--Link to auckland page-->
+                        <a href="auckland.html">Our Store in Auckland</a>
+                        <!--Link to tauranga page-->
+                        <a href="tauranga.html">Our Store in Tauranga</a>
+                        <!--Link to hamilton page-->
+                        <a href="hamilton.html">Our Store in Hamilton</a>
+                    </div>
+                </li>
+                <!--Link to contact page-->
                 <li><a href="contact.html">Contact</a></li>
+                <!--Right side of the navigation bar-->
                 <div class="right-side">
-                    <li><input type="text" placeholder="Search"></li>
+                    <!--Search bar-->
+                    <li><input type="text" name="" id="find" placeholder="Search products..." onkeyup="search()"></li>
+                    <!--Link to favorite page-->
+                    <!--Favorite icon-->
                     <li><a href="favourites.html"><i class="material-icons">favorite</i></a></li>
+                    <!--Link to cart page-->
+                    <!--Shopping cart icon-->
                     <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
                 </div>
             </ul>
         </nav>
-
+        <!--Bracelets main content-->
         <div class="collection-content">
+            <!--Main heading-->
             <h1>Our Collection</h1>
+            <!--Container holding all buttons-->
             <div class="button-container">
+                <!--Button that links to collection page-->
                 <button><a href="collection.html">All</a></button>
+                <!--Button that links to rings page-->
                 <button><a href="rings.html">Rings</a></button>
+                <!--Button that links to earrings page-->
                 <button><a href="earrings.html">Earrings</a></button>
-                <button><a href="bracelets.html">Bracelets</a></button>
+                <!--Button that links to bracelets page-->
+                <button><a class="active" href="bracelets.html">Bracelets</a></button>
+                <!--Button that links to necklaces page-->
                 <button><a href="necklaces.html">Necklaces</a></button>
             </div>
+            <!--Container holding 2 products-->
             <div class="product-container">
+                <!--First product-->
                 <div class="product">
-                    <a href="product.html">
-                        <img class="product-img" src="images/bracelet3.png">
-                        <h3 class="product-title">Turquoise Bracelet (Türkitas Bilezik)</h3>
-                        <p class="product-price">NZ$129</p>
-                    </a>
+                    <!--Product image-->
+                    <img class="product-img" src="images/bracelet3.png" alt="turquoise bracelet image">
+                    <!--Product name-->
+                    <h3 class="product-title">Turquoise Bracelet (Türkitas Bilezik)</h3>
+                    <!--Product price-->
+                    <p class="product-price">NZ$129</p>
+                    <!--Favorite button-->
                     <button class="favorite-button"><i class="material-icons">favorite</i></button>
+                    <!--Add to cart button-->
                     <button class="cart-button">Add to Cart</button>
                 </div>
+                <!--Second product-->
                 <div class="product">
-                    <a href="product.html">
-                        <img class="product-img" src="images/bracelet2.png">
-                        <h3 class="product-title">Carnelian Bracelet (Serdolik Bilezik)</h3>
-                        <p class="product-price">NZ$149</p>
-                    </a>
+                    <!--Product image-->
+                    <img class="product-img" src="images/bracelet2.png" alt="carnelian bracelet image">
+                    <!--Product name-->
+                    <h3 class="product-title">Carnelian Bracelet (Serdolik Bilezik)</h3>
+                    <!--Product price-->
+                    <p class="product-price">NZ$149</p>
+                    <!--Favorite button-->
                     <button class="favorite-button"><i class="material-icons">favorite</i></button>
+                    <!--Add to cart button-->
                     <button class="cart-button">Add to Cart</button>
                 </div>
             </div>
-        </div>
+            <!--Cart section-->
+            <div class="cart">
+                <!--Sub-heading-->
+                <h2>Cart</h2>
+                <!--Cart row-->
+                <div class="cart-row">
+                    <h2>Product</h2>
+                    <h2>Price</h2>
+                    <h2>Quantity</h2>
+                </div>
+                <!--Cart row-->
+                <div class="cart-row">
+                    <!--Container that holds products that were put into cart-->
+                    <div class="cart-container">
+                    </div>
+                </div>
+                <!--Total section of cart-->
+                <div class="cart-total">
+                    <h3>Total Price</h3>
+                    <!--Total price-->
+                    <h3 class="cart-price-total">NZ$0</h3>
+                </div>
+                <!--Checkout button-->
+                <button class="checkout-btn">Checkout</button>
+            </div>
 
+        </div>
+        <!--Footer-->
         <footer>
+            <!--Footer content-->
             <div class="footer-content">
+                <!--Footer navigation links-->
                 <div class="links">
+                    <!--Link to about us page-->
                     <a href="aboutus.html">About Us</a>
+                    <!--Link to contact page-->
                     <a href="contact.html">Contact</a>
                 </div>
+                <!--Copyright-->
                 <div class="copyright">
                     <p>@Copyright</p>
                 </div>
+                <!--Links to social media-->
                 <div class="social-medias">
                     <p>Our social medias</p>
-                    <img src="images/youtube.png" alt="youtube">
-                    <img src="images/tiktok.png" alt="tiktok">
-                    <img src="images/instagram.png" alt="instagram">
-                    <img src="images/facebook.png" alt="facebook">
+                    <!--Link to YouTube-->
+                    <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a>
+                    <!--Link to TikTok-->
+                    <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="tiktok"></a>
+                    <!--Link to Instagram-->
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram"></a>
+                    <!--Link to Facebook-->
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
                 </div>
+            </div>
         </footer>
-
     </body>
 </html>

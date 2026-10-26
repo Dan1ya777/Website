@@ -1,121 +1,183 @@
+/*General styles*/
+/*Body style*/
 body{
-  background-color: #fff;
-  color: #001D3D;
+  background-color: #fff; /* Sets background colour to white */
+  color: #001D3D; /* Sets main text colour to dark blue */
 }
+/*h1 style*/
 h1{
-  text-align: center;
-  font-family: 'Cormorant Garamond';
-  font-size: 5cap;
+  text-align: center; /* Centers h1 */
+  font-family: 'Cormorant Garamond'; /* Sets h1 font to Cormorant Garamond */
+  font-size: 5cap; /* Sets h1 size to 5cap */
 }
+/*h2 style*/
 h2{
-  text-align: center;
-  font-family: 'Solway';
-  font-size: 3cap;
+  text-align: center; /* Centers h2 */
+  font-family: 'Solway'; /* Sets h2 font to Solway */
+  font-size: 3cap; /* Sets h2 size to 3cap */
 }
+/*h3 style*/
 h3{
-  font-family: 'Solway';
+  font-family: 'Solway'; /* Sets h3 font to Solway */
 }
+/*Paragraph style*/
 p{
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans'; /* Sets paragraphs font to Noto Sans */
 }
+/*Link style*/
 a{
-  color: #fff;
-  font-family: 'Noto Sans';
-  text-decoration: none;
+  color: #fff; /* Sets links colour to white */
+  font-family: 'Noto Sans'; /* Sets links font to Noto Sans */
+  text-decoration: none; /* Removes underline */
 }
+/*Button style*/
 button{
-  background-color: #001D3D;
-  color: #fff;
-  font-family: 'Noto Sans';
-  text-decoration: none;
-  border: none;
-  font-size: 1.5cap;
+  background-color: #001D3D; /* Sets button background colour to dark blue */
+  color: #fff; /* Sets button text colour to white */
+  font-family: 'Noto Sans'; /* Sets button font to Noto Sans */
+  border: none; /* Removes border */
+  font-size: 1.5cap; /* Sets button font to 1.5cap */
 }
+/*Style for when button is hovered*/
+button:hover{
+  background-color: #5aa9e6; /* Changes button background colour to light blue when hovered */
+  color: #001D3D; /* Changes button text color to dark blue when hovered */
+  cursor: pointer; /* Changes cursor to pointer when hovered to a button */
+}
+/*Input style*/
+input{
+  font-family: 'Noto Sans'; /* Sets input font to Noto Sans */
+  font-size: 16px; /* Sets input font to 16px */
+}
+
+/*Navigation styles*/
 nav ul{
-  list-style-type: none;
+  list-style-type: none; /* Removes bullet points */
   margin: 0;
   padding: 0;
   background-color: #001D3D;
-  display: flex;
-  align-items: center;
+  display: flex; /* Places navigation items in a row */
+  align-items: center; /* Centers items */
 }
+/*Navigation links style*/
 nav ul li a{
-  display: block;
-  padding: 1cap 1.5cap;
+  display: block; /* Makes the whole area clickable */
+  padding: 1cap 1.5cap; /* Adds space around links */
 }
+/*Style for when neavigation links are hovered*/
 nav ul li a:hover{
-  background-color: #5aa9e6;
-  color: #001D3D;
+  background-color: #5aa9e6; 
+  color: #001D3D; 
 }
-nav ul li a.active{
-  color: #e1a730;
+/*Style for active page*/
+.active{
+  color: #e1a730; /* Shows active page with gold colour */
 }
+/*Style for rigth side of the navigation*/
 .right-side{
   display: flex;
-  flex-direction: row;
-  margin-left: 43%;
+  flex-direction: row; /* Places items in a row */
+  margin-left: 40%; /* Moves items to the right */
   align-items: center;
-  gap: 3%;
+  gap: 5%; /* Creates gap between items */
 }
+/*Search bar style*/
 nav input[type=text]{
   padding: 2%;
 }
+/*Dropdown style*/
+.dropdown{
+  position: relative;
+}
+/*Style for dropdown menu*/
+.dropdown-content{
+  display: none; /* Hides dropdown until hovered */
+  position: absolute;
+  background-color: #001D3D;
+  min-width: 160px; /* Sets minimum dropdown width */
+  z-index: 1; /* Places dropdown above other content */
+}
+/*Style for dropdown buttons*/
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+/*Style for when dropdown button is hovered*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
+/*Footer styles*/
 footer{
+  display: flex;
   background-color: #001D3D;
   color: #fff;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
+  margin-top: 3%; /* Adds space above the footer */
 }
+/*Style for */
 .footer-content{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Spaces sections evenly */
+  width: 100%;
 }
+/*Style for footer links*/
 .links{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Places links in column */
   gap: 1cap;
   margin-top: 1%;
 }
+/*Style for copyright text*/
 .copyright{
   text-align: center;
   margin-top: 5%;
 }
+/*Style for social medias*/
 .social-medias{
   text-align: center;
 }
+/*Style for social media images*/
 .social-medias img{
-  height: 1cap;
+  height: 1.5cap;
   width: auto;
+  margin: 3%;
 }
 
+/*Home page styles*/
+/*Hero section image style*/
 .hero-section-image{
-  position: relative;
+  position: relative; /* Allows content to be positioned over the image */
 }
+/*Style for hero section content*/
 .hero-section-content{
-  position: absolute;
+  position: absolute; /* Places content over the hero image */
   left: 5%;
   top: 50%;
 }
+/*Style for hero section button*/
 .hero-section-button{
   padding: 1cap;
 }
+/*Home info section style*/
 .home-info-section{
   display: flex;
   flex-direction: column;
 }
-.home-info{
+/*Style for info section*/
+.info-section{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5%;
 }
+/*Style for images in home-info-section*/
 .home-info-section img{
   width: 25%;
   height: auto;
 }
+/*Item container style*/
 .item-container{
   display: flex;
   flex-direction: row;
@@ -124,20 +186,33 @@ footer{
   gap: 5%;
   margin: 3%;
 }
+/*Item card style*/
 .item{
   border: solid;
   background-color: #5aa9e6;
   text-align: center;
   width: 20%;
 }
+/*Image in item card style*/
 .item img{
   width: 100%;
   height: 80%;
 }
+/*Item card links style*/
 .item a{
   text-decoration: none;
 }
+/*Style for when item card is hovered*/
+.item:hover{
+  border: #e1a730 solid; /* Changes border color when hovered */
+}
+/*Style for when item card is hovered*/
+.item a:hover{
+  color: #e1a730;
+}
 
+/*Collection page styles*/
+/*Button container style*/
 .button-container{
   display: flex;
   flex-direction: row;
@@ -146,10 +221,12 @@ footer{
   justify-content: center;
   flex-wrap: wrap;
 }
+/*Style for button in button container*/
 .button-container button{
   width: 10%;
   padding: 1%;
 }
+/*Style for product container*/
 .product-container{
   display: flex;
   flex-direction: row;
@@ -158,20 +235,24 @@ footer{
   justify-content: center;
   flex-wrap: wrap;
 }
+/*Style for product card*/
 .product{
   border: solid;
   background-color: #5aa9e6;
   position: relative;
   width: 20%;
 }
+/*Style for images in product card*/
 .product img{
   width: 100%;
   height: 58%;
 }
+/*Style for link in product card*/
 .product a{
   text-decoration: none;
   text-align: center;
 }
+/*Style for favorite button in product card*/
 .product .favorite-button{
   position: absolute;
   top: 2%;
@@ -179,41 +260,19 @@ footer{
   background: none;
   border: none;
 }
+/*Style for cart button in product card*/
 .product .cart-button{
   width: 100%;
   height: 10%;
 }
 
-.about-section1{
+/*About us page styles*/
+.about-content{
   display: flex;
   flex-direction: column;
 }
-.about-image{
-  display: flex;
-  justify-content: center;
-}
-.about-image img{
-  width: 50%;
-  height: auto;
-  position: relative;
-}
-.about-image h2{
-  position: absolute;
-}
-.heading1{
-  top: 45%;
-}
-.heading2{
-  top: 110%;
-}
-.heading3{
-  top: 170%;
-}
-.about-text{
-  text-align: center;
-  margin: 2%;
-}
 
+/*Contact page styles*/
 .contact-content{
   display: flex;
   flex-direction: row;
@@ -221,38 +280,48 @@ footer{
   flex-wrap: wrap;
   gap: 10%;
 }
+/*Style contact-form section*/
 .contact-form{
   display: flex;
   flex-direction: column;
-  flex: 2;
+  flex: 2; /* Gives form more space */
 }
+/*Style for contact-info section*/
 .contact-info{
-  flex: 1;
+  flex: 1; /* Gives contact info less space */
 }
+/*Label style*/
 label{
   display: flex;
   flex-direction: column;
   font-family: 'Noto Sans';
 }
+/*Text area style*/
 textarea{
   width: 100%;
   margin-bottom: 2%;
   border: solid #001D3D;
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  height: 25px;
 }
+/*Style for input in form*/
 form input{
   width: 100%;
-  padding-bottom: 2%;
   margin-bottom: 2%;
   border: solid #001D3D;
 }
+/*Style for button in form*/
 form button{
   width: 100%;
 }
 
+/*Auckland / Tauranga / Hamilton styles*/
 .location-content{
   display: flex;
   flex-direction: column;
 }
+/*Style for sections in these pages*/
 .location-section2{
   display: flex;
   flex-direction: row;
@@ -268,14 +337,18 @@ form button{
   margin-top: 3%;
   justify-content: center;
 }
+/*Style for h2 in location-content*/
 .location-content h2{
   margin-top: 3%;
 }
 
+/*Cart style*/
+/*Style for cart container*/
 .cart-container{
   display: flex;
   flex-direction: column;
 }
+/*Style for cart row*/
 .cart-row{
   display: flex;
   flex-direction: row;
@@ -285,25 +358,249 @@ form button{
   justify-content: center;
   margin-top: 2%;
 }
+/*Style for image in cart*/
 .cart-img{
   width: 10%;
   height: auto;
 }
+/*Style for cart quantity button*/
 .cart-qty{
   width: 5%;
   padding: 1%;
 }
+/*Style for remove button*/
 .remove-btn{
   padding: 1%;
 }
+/*Style for cart-total section*/
 .cart-total{
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
+/*Style for when cart button is hovered*/
+.cart-button:hover{
+  background-color: #e1a730;
+}
+/*Style for checkout button*/
+.checkout-btn{
+  display: block;
+  margin: 1% auto;
+  padding: 1%;
+}
+/*Style for remove button*/
 .removeall{
   display: flex;
   justify-content: center;
   margin-top: 20%;
+}
+
+/*Style for mobile phones navigation / menu*/
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/*Media queries*/
+
+/*Mobile responsive design*/
+@media (max-width: 600px){
+  /* General styles */
+  /* Changed font sizes */
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 28px;
+  }
+  /* Navigation / Menu styles */
+  /* Shows the hamburger menu on phones */
+  .checkbtn{
+    display: block;
+    background-color: #001D3D;
+    width: 100%;
+    order: 1;
+    margin-right: 20px;
+  }
+  /* Makes the navigation menu cover the screen */
+  ul{
+    position: fixed;
+    z-index: 2;
+    top: 50px;
+    right: -100%;
+    background-color: #001D3D;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  ul li{
+    margin: 15px 0;
+  }
+  ul li a{
+    font-size: 20px;
+  }
+  /* Shows the menu when the checkbox is selected */
+  #check:checked ~ ul{
+    right: 0;
+  }
+  /* Changes to vertical alignment and centers*/
+  .right-side{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  /* Changes to vertical alignment */
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Moves hero text and button */
+  .hero-section-content{
+    display: flex;
+    flex-direction: column;
+    top: 3%;
+    left: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  /* Changes to vertical alignment */
+  .info-section{
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Changes image size */
+  .info-section img{
+    width: 80%;
+    height: auto;
+  }
+  /* Changes to vertical alignment */
+  .item-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Changes width and adds margin */
+  .item{
+    margin: 5% 0;
+    width: 60%;
+  }
+
+  /* Changes to vertical alignment */
+  .button-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Changes width and adds margin */
+  .button-container button{
+    width: 100%;
+    margin: 3% 0;
+  }
+  /* Changes to vertical alignment */
+  .product-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Changes width and adds margin */
+  .product{
+    width: 60%;
+    margin: 5% 0;
+  }
+  /* Adds margin bottom*/
+  .checkout-btn{
+    margin-bottom: 10%;
+  }
+  
+  /* Changes to vertical alignment */
+  .contact-content{
+    flex-direction: column;
+  }
+  /* Adds margin bottom */
+  .contact-form{
+    margin-bottom: 5%;
+  }
+
+  /* Changes to vertical alignment */
+  .location-section2{
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Changes to vertical alignment */
+  .location-section3{
+    flex-direction: column;
+  }
+  /* Changes image size */
+  .location-section2 img{
+    width: 95%;
+    height: auto;
+  }
+  /* Adds margin */
+  .location-section3 img{
+    margin: 5% 0;
+  }
+}
+
+/*Tablet responsive design*/
+@media (min-width:768px) and (max-width: 1032px){
+  /* General styles */
+  /* Changes font size */
+  p{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 22px;
+  }
+
+  /* Navigation styles */
+  .right-side{
+    margin-left: 20%;
+  }
+  /* Moves hero button and text */
+  .hero-section-content{
+    top: 15%;
+  }
+
+  /* Home page styles */
+  /* Makes item cards fit two per row */
+  .item{
+    width: 40%;
+    margin-top: 5%;
+  }
+
+  /* Collection page styles */
+  /* Changes to vertical alignment */
+  .product-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Changes width and adds margin */
+  .product{
+    width: 60%;
+    margin: 5% 0;
+  }
+
+  /* About us page styles */
+  .about-content .info-section img{
+    width: 50%;
+  }
+
+  /* Contact page styles */
+  /* Changes to vertical alignment */
+  .contact-content{
+    flex-direction: column;
+  }
+  /* Adds margin top*/
+  .contact-info{
+    margin-top: 5%;
+  }
 }

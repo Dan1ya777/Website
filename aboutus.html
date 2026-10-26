@@ -1,97 +1,170 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Makes website responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Link to CSS stylesheet-->
         <link rel="stylesheet" href="style.css">
+        <!--Link to Google material icons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Links to Google fonts-->
         <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Solway' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+        <!--Sets favicon / tab icon-->
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <!--Title shown on the tab-->
         <title>About Us</title>
     </head>
     <body>
+        <!--Navigation bar-->
         <nav>
+            <!--Checkbox used to open and close mobile hamburger menu-->
+            <input type="checkbox" id="check">
+            <!--Mobile hamburger menu-->
+            <label for="check" class="checkbtn">
+                <!--Menu icon-->
+                <i class="material-icons">menu</i>
+            </label>
+            <!--Navigation links-->
             <ul>
+                <!--Logo and link to home page-->
                 <li><a href="index.html"><img src="images/logo.png" alt="logo"></a></li>
+                <!--Link to home page-->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a class="active" href="aboutus.html">About Us</a></li>
+                <!--Collection dropdown menu-->
+                <li class="dropdown">
+                    <!--Link to collection page-->
+                    <a href="collection.html">Collection</a>
+                    <!--Dropdown content-->
+                    <div class="dropdown-content">
+                        <!--Navigation links in dropdown-->
+                        <!--Link to rings page-->
+                        <a href="rings.html">Rings</a>
+                        <!--Link to earrings page-->
+                        <a href="earrings.html">Earrings</a>
+                        <!--Link to bracelets page-->
+                        <a href="bracelets.html">Bracelets</a>
+                        <!--Link to necklaces page-->
+                        <a href="necklaces.html">Necklaces</a>
+                    </div>
+                </li>
+                <!--About us dropdown menu-->
+                <li class="dropdown">
+                    <!--Link to about us page-->
+                    <a class="active" href="aboutus.html">About Us</a>
+                    <!--Dropdown content-->
+                    <div class="dropdown-content">
+                        <!--Navigation links in dropdown-->
+                        <!--Link to auckland page-->
+                        <a href="auckland.html">Our Store in Auckland</a>
+                        <!--Link to tauranga page-->
+                        <a href="tauranga.html">Our Store in Tauranga</a>
+                        <!--Link to hamilton page-->
+                        <a href="hamilton.html">Our Store in Hamilton</a>
+                    </div>
+                </li>
+                <!--Link to contact page-->
                 <li><a href="contact.html">Contact</a></li>
+                <!--Right side of the navigation bar-->
                 <div class="right-side">
-                    <li><input type="text" placeholder="Search"></li>
+                    <!--Search bar-->
+                    <li><input type="text" name="" id="find" placeholder="Search products..." onkeyup="search()"></li>
+                    <!--Link to favorite page-->
+                    <!--Favorite icon-->
                     <li><a href="favourites.html"><i class="material-icons">favorite</i></a></li>
+                    <!--Link to cart page-->
+                    <!--Shopping cart icon-->
                     <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
                 </div>
             </ul>
         </nav>
-
+        <!--About us main content-->
         <div class="about-content">
+            <!--Main heading-->
             <h1>About Us</h1>
-            <div class="about-section1">
-                <div class="about-image">
-                    <img src="images/aboutus1.png">
-                    <h2 class="heading1">About Us</h2>
-                </div>
-                <div class="about-text">
-                    <p>We are passionate about sharing the beauty of Kazakh jewellery with people around the world. 
-                        Our website celebrates Kazakhstan's rich culture and traditions by showcasing unique jewellery 
-                        designs inspired by history, art, and nomadic heritage. Each piece reflects the creativity and 
-                        craftsmanship of Kazakh artisans.</p>
-                </div>
+            <!--Sub-heading-->
+            <h2>About Us</h2>
+            <!--Info section-->
+            <div class="info-section">
+                <!--About us image-->
+                <img src="images/aboutus1.png" alt="our team image">
+                <!--Paragraph about us-->
+                <p>We are passionate about sharing the beauty of Kazakh jewellery with people around the world. 
+                    Our website celebrates Kazakhstan's rich culture and traditions by showcasing unique jewellery 
+                    designs inspired by history, art, and nomadic heritage. Each piece reflects the creativity and 
+                    craftsmanship of Kazakh artisans.</p>
             </div>
+            <!--Sub-heading-->
+            <h2>How our Jewellery is made</h2>
+            <!--Info section-->
+            <div class="info-section">
+                <!--Jewellery making image-->
+                <img src="images/aboutus2.png" alt="jewellery making image">
+                <!--Paragraph about how jewellery is made-->
+                <p>Our jewellery is inspired by traditional Kazakh designs and is carefully crafted using 
+                    high-quality materials. Skilled artisans create detailed patterns that reflect Kazakh 
+                    culture, nature, and history. Each piece is designed with attention to detail, combining 
+                    traditional craftsmanship with timeless beauty.</p>
             </div>
-            <div class="about-section1">
-                <div class="about-image">
-                    <img src="images/aboutus2.png">
-                    <h2 class="heading2">How our Jewellery is made</h2>
-                </div>
-                <div class="about-text">
-                    <p>Our jewellery is inspired by traditional Kazakh designs and is carefully crafted using 
-                        high-quality materials. Skilled artisans create detailed patterns that reflect Kazakh 
-                        culture, nature, and history. Each piece is designed with attention to detail, combining 
-                        traditional craftsmanship with timeless beauty.</p>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="images/store1-1.png">
-                <h2 class="heading3">Our Store Locations</h2>
-            </div>
+            <!--Store locations section-->
+            <!--Sub-heading-->
+            <h2>Our Store Locations</h2>
+            <!--Container holding all item cards-->
             <div class="item-container">
+                <!--First item card - Auckland-->
                 <div class="item">
+                    <!--Link to auckland page-->
                     <a href="auckland.html">
-                        <img src="images/auckland.png">
+                        <img src="images/auckland.png" alt="Auckland image">
                         <h3>Auckland</h3>
                     </a>
                 </div>
+                <!--Second item card - Tauranga-->
                 <div class="item">
+                    <!--Linkt to tauranga page-->
                     <a href="tauranga.html">
-                        <img src="images/tauranga.png">
+                        <img src="images/tauranga.png" alt="Tauranga image">
                         <h3>Tauranga</h3>
                     </a>
                 </div>
+                <!--Third item card - Hamilton-->
                 <div class="item">
+                    <!--Link to hamilton page-->
                     <a href="hamilton.html">
-                        <img src="images/hamilton.png">
+                        <img src="images/hamilton.png" alt="Hamilton image">
                         <h3>Hamilton</h3>
                     </a>
                 </div>
             </div>
-
+        <!--Footer-->
         <footer>
+            <!--Footer content-->
             <div class="footer-content">
+                <!--Footer navigation links-->
                 <div class="links">
-                    <a href="aboutus.html">About Us</a>
+                    <!--Link to about us page-->
+                    <a class="active" href="aboutus.html">About Us</a>
+                    <!--Link to contact page-->
                     <a href="contact.html">Contact</a>
                 </div>
+                <!--Copyright-->
                 <div class="copyright">
                     <p>@Copyright</p>
                 </div>
+                <!--Links to social media-->
                 <div class="social-medias">
                     <p>Our social medias</p>
-                    <img src="images/youtube.png" alt="youtube">
-                    <img src="images/tiktok.png" alt="tiktok">
-                    <img src="images/instagram.png" alt="instagram">
-                    <img src="images/facebook.png" alt="facebook">
+                    <!--Link to YouTube-->
+                    <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a>
+                    <!--Link to TikTok-->
+                    <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="tiktok"></a>
+                    <!--Link to Instagram-->
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram"></a>
+                    <!--Link to Facebook-->
+                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
                 </div>
+            </div>
         </footer>
     </body>
 </html>
